@@ -1,0 +1,8 @@
+{
+  "name": "corybot",
+  "version": "0.1.0",
+  "description": "AI bot",
+  "author": "Cory Gabrielsen",
+  "repository": "git@github.com:stoooops/corybot.git",
+  "license": "MIT"
+}
