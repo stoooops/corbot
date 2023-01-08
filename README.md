@@ -1,7 +1,7 @@
-# corybot
+# corbot
 
-`corybot` is a command-line bot that can perform a variety of useful tasks for you.
+`corbot` is a command-line bot that can perform a variety of useful tasks for you.
 
 ## License
 
-`corybot` is released under the MIT License.
+`corbot` is released under the MIT License.

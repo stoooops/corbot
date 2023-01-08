@@ -1,8 +1,8 @@
 {
-  "name": "corybot",
+  "name": "corbot",
   "version": "0.1.0",
   "description": "AI bot",
   "author": "Cory Gabrielsen",
-  "repository": "git@github.com:stoooops/corybot.git",
+  "repository": "git@github.com:stoooops/corbot.git",
   "license": "MIT"
 }
