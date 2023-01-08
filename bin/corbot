@@ -4,12 +4,15 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "$(readlink "${BASH_SOURCE[0]}")")" && pwd)"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+REPO_DIR=$(realpath "${SCRIPT_DIR}/..")
+
+export PYTHONPATH=${REPO_DIR}
 
 main() {
   case "${1}" in
     hello)
-      ${SCRIPT_DIR}/corbot-hello
+      ${REPO_DIR}/bin/corbot-hello
       ;;
     *)
       echo "Usage: corbot hello"
