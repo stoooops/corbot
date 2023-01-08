@@ -3,7 +3,7 @@
 import os
 import sys
 
-from runner.base import CorbotRunner
+from base import CorbotRunner
 
 # invoked as corbot todo "message"
 # appends message to todo.txt

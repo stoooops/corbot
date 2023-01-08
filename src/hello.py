@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from runner.base import CorbotRunner
+from base import CorbotRunner
 
 
 class Hello(CorbotRunner):

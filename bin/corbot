@@ -6,7 +6,7 @@ set -o pipefail
 
 REPO_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/.. && pwd)"
 
-export PYTHONPATH=${REPO_DIR}
+export PYTHONPATH=${REPO_DIR}/src
 
 main() {
   # Extract the first argument and shift the remaining arguments
