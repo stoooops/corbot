@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$(readlink "${BASH_SOURCE[0]}")")" && pwd)"
+
+main() {
+  case "${1}" in
+    hello)
+      ${SCRIPT_DIR}/corbot-hello
+      ;;
+    *)
+      echo "Usage: corbot hello"
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"

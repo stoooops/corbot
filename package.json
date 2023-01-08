@@ -2,6 +2,10 @@
   "name": "corbot",
   "version": "0.1.0",
   "description": "AI bot",
+  "scripts": {
+    "link-bot": "sudo ln -s $(pwd)/bin/corbot /usr/local/bin/corbot",
+    "unlink-bot": "rm /usr/local/bin/corbot"
+  },
   "author": "Cory Gabrielsen",
   "repository": "git@github.com:stoooops/corbot.git",
   "license": "MIT"
