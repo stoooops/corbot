@@ -5,7 +5,7 @@ set -o nounset
 set -o pipefail
 
 main() {
-  python3 -m runner.hello "$@"
+  python3 -m runner.todo "$@"
 }
 
 main "$@"

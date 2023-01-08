@@ -9,12 +9,19 @@ REPO_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/.. && pwd)"
 export PYTHONPATH=${REPO_DIR}
 
 main() {
-  case "${1}" in
+  # Extract the first argument and shift the remaining arguments
+  command=$1
+  shift
+
+  case "${command}" in
     hello)
-      ${REPO_DIR}/bin/corbot-hello
+      ${REPO_DIR}/bin/corbot-hello "$@"
+      ;;
+    todo)
+      ${REPO_DIR}/bin/corbot-todo "$@"
       ;;
     *)
-      echo "Usage: corbot todo"
+      echo "Usage: corbot (hello|todo)"
       exit 1
       ;;
   esac
